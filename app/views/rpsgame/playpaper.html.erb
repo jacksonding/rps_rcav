@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-8">
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default"><a href="http://localhost:3000/rock">Play rock</a></button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default"><a href="http://localhost:3000/paper">Play paper</a></button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default"><a href="http://localhost:3000/scissors">Play scissors</a></button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-2 col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Paper</h3>
+              </div>
+              <div class="panel-body">
+                <img src="http://localhost:3000/assets/images/paper.png" width="320">
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><%= @choice %></h3>
+              </div>
+              <div class="panel-body">
+                <img src="http://localhost:3000/assets/images/<%= @choice %>.png" width="320">
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-offset-5 col-sm-2">
+          <div class="alert alert-success" role="alert"><%= @result %>
+          </div>
+        </div>
+    </div>
+</div>
+
+
